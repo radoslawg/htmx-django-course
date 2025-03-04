@@ -2,6 +2,11 @@
 
 Following course at [NetNinja.dev](https://www.youtube.com/watch?v=ig3syqGT1Fg)
 
+## Other Links
+
+- [DaisyUI](https://daisyui.com/)
+- [Htmx](https://htmx.org/docs/)
+
 ## Setting up
 
 ```sh
