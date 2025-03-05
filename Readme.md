@@ -16,3 +16,9 @@ pip install -r requirements.txt
 python .\manage.py migrate
 python .\manage.py runserver
 ```
+
+## Notes
+
+After changing model run: `python .\manage.py makemigrations`
+To create superuser run: `python .\manage.py createsuperuser`
+[Admin page](http://127.0.0.1:8000/admin/)
