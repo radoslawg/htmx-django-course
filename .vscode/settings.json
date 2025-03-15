@@ -1,0 +1,7 @@
+{
+        "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+        "text": "Git commit message should consist of two parts. First line starts with gitmoji and short description of changes. Then on next line with bullet points give detailed descriptions of each change that consist of this commit and purpose of commit, problem it solves, and any other relevant information. Gitmoji uses 📝 emoji for update of documentation. Gitmoji spec: ✨ for introducing new features. 🐛 for fixing bugs. ♻️ for refactoring code. 🔧 for configuration changes. 🎨 for improving structure or format of code. 🚧 for work in progress. ✅ for adding tests. 🔥 for removing code or files. ⚡️ for improving performance. 🔒️ for security fixes. ⬆️ for upgrading dependencies. ⬇️ for downgrading dependencies. 👽️ for updating external dependencies. 🎉 for initial commit. 🚚 for moving or renaming files. 🚀 for deploying stuff. 💄 for updating UI and style files. 🚨 for removing linter warnings. 💚 for fixing CI build. ✏️ for fixing typos. 🔖 for version tags. 👷 for adding CI build system. 📈 for adding analytics or tracking code. ➕ for adding a dependency. ➖ for removing a dependency. 💡 for adding comments. ⚰️ for removing dead code.",
+    }
+        ],
+}
