@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
+from django.views.decorators.http import require_http_methods
 
 from .forms import ContactForm
 
@@ -24,3 +25,17 @@ def search_contacts(request):
     ).order_by("-created_at")
     context = {"contacts": contacts}
     return render(request, "partials/contact-list.html", context)
+
+
+@login_required
+@require_http_methods(["POST"])
+def create_contact(request):
+    form = ContactForm(request.POST)
+    if form.is_valid():
+        contact = form.save(commit=False)
+        contact.user = request.user
+        contact.save()
+        response = render(request, "partials/contact-row.html", {"contact": contact})
+        response["HX-Trigger"] = "success"
+        return response
+    return render(request, "partials/contact-list.html", {"form": ContactForm()})
