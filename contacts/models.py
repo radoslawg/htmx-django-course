@@ -12,6 +12,8 @@ class Contact(models.Model):
     email = models.EmailField()
     created_at = models.DateTimeField(auto_now_add=True)
 
+    objects = models.Manager()
+
 
 class Meta:
     unique_together = ("user", "email")

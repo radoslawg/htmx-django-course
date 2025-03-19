@@ -17,6 +17,12 @@ python .\manage.py migrate
 python .\manage.py runserver
 ```
 
+### Creating superuser
+
+```sh
+python manage.py createsuperuser
+```
+
 ## Notes
 
 After changing model run: `python .\manage.py makemigrations`
