@@ -13,6 +13,8 @@ Following course at [NetNinja.dev](https://www.youtube.com/watch?v=ig3syqGT1Fg)
 python -m venv venv
 venv\scripts\activate
 pip install -r requirements.txt
+npm install
+npx tailwindcss -i .\contacts\static\css\input.css -o .\contacts\static\css\output.css --minify
 python .\manage.py migrate
 python .\manage.py runserver
 ```
